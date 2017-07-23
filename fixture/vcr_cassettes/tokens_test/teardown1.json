@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "{\"reason\":{\"description\":\"Token is being resumed because the subscription item is back in stock\",\"code\":\"merchant.requested\"}}",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "Locale": "en",
+        "Paidy-Version": "2016-07-01",
+        "User-Agent": "Paidy/2016-07-01 paidy/0.1.0"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 80000,
+        "connect_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api.paidy.com/tokens/TOKEN_PLACEHOLDER/resume"
+    },
+    "response": {
+      "body": "{\"reference\":\"err_ZTYwOWIzZTY5M2RiNDRjN2FhZTM0MTAzNzFiNDg5YzI=\",\"status\":\"404\",\"code\":\"404\",\"title\":\"Oh-ow\",\"description\":\"The requested resource could not be found.\"}",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
+        "Paidy-Version": "2016-07-01",
+        "Request-Id": "req_NzVjMTBiY2QzOTEyNDEwY2E5ZWQ2YzA0NzhmYTIxYjc=",
+        "Server": "nginx/1.10.3 (Ubuntu)",
+        "Content-Length": "167",
+        "Connection": "keep-alive"
+      },
+      "status_code": 404,
+      "type": "ok"
+    }
+  }
+]

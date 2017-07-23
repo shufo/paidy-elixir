@@ -1,0 +1,68 @@
+[
+  {
+    "request": {
+      "body": "{\"token_id\":\"TOKEN_PLACEHOLDER\",\"store_name\":\"Paidy sample store\",\"shipping_address\":{\"zip\":\"106-2004\",\"state\":\"港区\",\"line2\":\"六本木4-22-1\",\"line1\":\"AXISビル 10F\",\"city\":\"東京都\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"unit_price\":12000,\"title\":\"Paidyスニーカー\",\"quantity\":1,\"id\":\"PDI001\",\"description\":\"Paidyスニーカー\"}]},\"metadata\":{},\"description\":\"hoge\",\"currency\":\"JPY\",\"buyer_data\":{\"order_count\":1000,\"ltv\":250000,\"last_order_at\":20,\"last_order_amount\":20000,\"age\":29},\"amount\":12500}",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "Locale": "en",
+        "Paidy-Version": "2016-07-01",
+        "User-Agent": "Paidy/2016-07-01 paidy/0.1.0"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 80000,
+        "connect_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api.paidy.com/payments"
+    },
+    "response": {
+      "body": "{\"id\":\"pay_WXURAD4AADkA1Gj4\",\"created_at\":\"2017-07-23T21:11:28.739Z\",\"expires_at\":\"2017-08-22T21:11:28.744Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"authorized\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[],\"refunds\":[],\"metadata\":{}}",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Sun, 23 Jul 2017 21:11:30 GMT",
+        "Paidy-Version": "2016-07-01",
+        "Request-Id": "req_Y2VjN2Y0OWYzZjUzNDYwODg2NmNjMmE2MzMwZGIzYmQ=",
+        "Server": "nginx/1.10.3 (Ubuntu)",
+        "Content-Length": "747",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "{}",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "Locale": "en",
+        "Paidy-Version": "2016-07-01",
+        "User-Agent": "Paidy/2016-07-01 paidy/0.1.0"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 80000,
+        "connect_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api.paidy.com/payments/pay_WXURAD4AADkA1Gj4/captures"
+    },
+    "response": {
+      "body": "{\"id\":\"pay_WXURAD4AADkA1Gj4\",\"created_at\":\"2017-07-23T21:11:28.739Z\",\"expires_at\":\"2017-08-22T21:11:28.744Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"closed\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[{\"id\":\"cap_WXURAD4AADMA1Gj5\",\"created_at\":\"2017-07-23T21:11:28.780Z\",\"amount\":12500,\"tax\":300,\"shipping\":200,\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"metadata\":{}}],\"refunds\":[],\"metadata\":{}}",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Sun, 23 Jul 2017 21:11:30 GMT",
+        "Paidy-Version": "2016-07-01",
+        "Request-Id": "req_ZjZkMzYwOWQ4YjdmNDE2Y2ExZGZkOWFhM2Q0YWNkMTE=",
+        "Server": "nginx/1.10.3 (Ubuntu)",
+        "Content-Length": "992",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

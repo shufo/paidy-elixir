@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "{\"reason\":{\"description\":\"Token was deleted because consumer canceled the subscription\",\"code\":\"consumer.requested\"}}",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "Locale": "en",
+        "Paidy-Version": "2016-07-01",
+        "User-Agent": "Paidy/2016-07-01 paidy/0.1.0"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 80000,
+        "connect_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api.paidy.com/tokens/TOKEN_PLACEHOLDER/delete"
+    },
+    "response": {
+      "body": "{\"id\":\"TOKEN_PLACEHOLDER\",\"merchant_id\":\"MERCHANT_PLACEHOLDER\",\"wallet_id\":\"default\",\"status\":\"deleted\",\"origin\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\",\"address\":null},\"description\":\"Sample store\",\"kind\":\"recurring\",\"metadata\":{},\"webhook_url\":null,\"consumer_id\":\"con_0000000000000001\",\"suspensions\":[],\"test\":true,\"version_nr\":9,\"created_at\":\"2017-07-23T20:21:27.678Z\",\"updated_at\":\"2017-07-23T21:11:31.773Z\",\"activated_at\":\"2017-07-23T20:21:30.435Z\",\"deleted_at\":\"2017-07-23T21:11:31.773Z\"}",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
+        "Paidy-Version": "2016-07-01",
+        "Request-Id": "req_NTIxYWI4YTRkYzQ1NDllOWFmODAzOWZiMWZhMTFkNTQ=",
+        "Server": "nginx/1.10.3 (Ubuntu)",
+        "Content-Length": "577",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

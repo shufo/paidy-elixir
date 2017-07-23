@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "Locale": "en",
+        "Paidy-Version": "2016-07-01",
+        "User-Agent": "Paidy/2016-07-01 paidy/0.1.0"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 80000,
+        "connect_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api.paidy.com/tokens/"
+    },
+    "response": {
+      "body": "{\"reference\":\"err_N2UyNTJmNjMxZGZiNGRhOGJjMzkyYWE4NTIwYWY1NGI=\",\"status\":\"401\",\"code\":\"authentication.failed\",\"title\":\"Authentication invalid\",\"description\":\"The supplied authentication is invalid\"}",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
+        "Request-Id": "req_ZTRiMmM0YjEyMGM2NGI5NWEwNWJkOTI5YWUwYjM2ZmQ=",
+        "Server": "nginx/1.10.3 (Ubuntu)",
+        "WWW-Authenticate": "Bearer realm=\"Paidy\"",
+        "Content-Length": "198",
+        "Connection": "keep-alive"
+      },
+      "status_code": 401,
+      "type": "ok"
+    }
+  }
+]

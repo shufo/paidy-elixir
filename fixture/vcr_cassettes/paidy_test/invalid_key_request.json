@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json",
+        "Locale": "en",
+        "Paidy-Version": "2016-07-01",
+        "User-Agent": "Paidy/2016-07-01 paidy/0.1.0"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 80000,
+        "connect_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api.paidy.com/tokens/"
+    },
+    "response": {
+      "body": "{\"reference\":\"\",\"status\":\"500\",\"code\":\"service.exception\",\"title\":\"Internal service exception\",\"description\":\"Something went wrong\"}",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
+        "Server": "nginx/1.10.3 (Ubuntu)",
+        "Content-Length": "132",
+        "Connection": "keep-alive"
+      },
+      "status_code": 500,
+      "type": "ok"
+    }
+  }
+]
