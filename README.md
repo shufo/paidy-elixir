@@ -1,6 +1,11 @@
-# Paidy
+# Paidy for Elixir
 
-[Paidy](https://paidy.com/) client for Elixir
+[![Travis](https://img.shields.io/travis/shufo/paidy-elixir.svg)](https://travis-ci.org/shufo/paidy-elixir)
+[![Hex.pm](https://img.shields.io/hexpm/v/paidy.svg)](https://hex.pm/packages/paidy)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-9768d1.svg)](https://hexdocs.pm/paidy)
+[![Coverage Status](https://coveralls.io/repos/github/shufo/paidy-elixir/badge.svg?branch=master)](https://coveralls.io/github/shufo/paidy-elixir?branch=master)
+
+An Elixir library for working with [Paidy](https://paidy.com/).
 
 ## Features
 
