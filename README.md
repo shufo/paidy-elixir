@@ -1,6 +1,6 @@
 # Paidy
 
-Paidy client for Elixir
+[Paidy](https://paidy.com/) client for Elixir
 
 ## Features
 
