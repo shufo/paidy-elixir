@@ -168,7 +168,7 @@ params = %{
 ```
 
 ## Testing
-If you start contributing and you want to run mix test, first you need to export PAYJP_SECRET_KEY environment variable in the same shell as the one you will be running mix test in.
+If you start contributing and you want to run mix test, first you need to export PAIDY_SECRET_KEY environment variable in the same shell as the one you will be running mix test in.
 
 ```bash
 export PAIDY_SECRET_KEY="yourkey"
