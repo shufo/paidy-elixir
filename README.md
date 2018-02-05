@@ -42,10 +42,10 @@ end
 params = %{
   amount: 12500,
   shipping_address: %{
-      line1: "AXISビル 10F",
-      line2: "六本木4-22-1",
-      state: "港区",
-      city: "東京都",
+      line1: "AXIS building 10F",
+      line2: "roppongi 4-22-1",
+      state: "Minato-ku",
+      city: "Tokyo",
       zip: "106-2004"
   },
   order: %{
@@ -53,8 +53,8 @@ params = %{
       items: [%{
               quantity: 1,
               id: "PDI001",
-              title: "Paidyスニーカー",
-              description: "Paidyスニーカー",
+              title: "Paidy shoes",
+              description: "Paidy shoes",
               unit_price: 12000
           }],
       tax: 300,
