@@ -18,14 +18,14 @@
       "url": "https://api.paidy.com/payments"
     },
     "response": {
-      "body": "{\"id\":\"pay_WXURAT4AADgA1Gj8\",\"created_at\":\"2017-07-23T21:11:29.768Z\",\"expires_at\":\"2017-08-22T21:11:29.773Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"authorized\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[],\"refunds\":[],\"metadata\":{}}",
+      "body": "{\"id\":\"pay_WnhU4UwAAC8ABMw1\",\"created_at\":\"2018-02-05T12:58:09.726Z\",\"expires_at\":\"2018-03-07T12:58:09.734Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"authorized\",\"tier\":\"classic\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[],\"refunds\":[],\"metadata\":{}}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:31 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:09 GMT",
         "Paidy-Version": "2016-07-01",
-        "Request-Id": "req_M2JlN2UzMTFjY2Q0NDVmMzk0MjFmOGFkODI2MzE1Mzk=",
+        "Request-Id": "req_N2Q1NzM1MzVmODEzNGQxMGIzMjFjNDQ2NzJhZjBjNzk=",
         "Server": "nginx/1.10.3 (Ubuntu)",
-        "Content-Length": "747",
+        "Content-Length": "764",
         "Connection": "keep-alive"
       },
       "status_code": 200,
@@ -48,17 +48,17 @@
         "connect_timeout": 30000
       },
       "request_body": "",
-      "url": "https://api.paidy.com/payments/pay_WXURAT4AADgA1Gj8/captures"
+      "url": "https://api.paidy.com/payments/pay_WnhU4UwAAC8ABMw1/captures"
     },
     "response": {
-      "body": "{\"id\":\"pay_WXURAT4AADgA1Gj8\",\"created_at\":\"2017-07-23T21:11:29.768Z\",\"expires_at\":\"2017-08-22T21:11:29.773Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"closed\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[{\"id\":\"cap_WXURAT4AAD4A1Gj9\",\"created_at\":\"2017-07-23T21:11:29.803Z\",\"amount\":12500,\"tax\":300,\"shipping\":200,\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"metadata\":{}}],\"refunds\":[],\"metadata\":{}}",
+      "body": "{\"id\":\"pay_WnhU4UwAAC8ABMw1\",\"created_at\":\"2018-02-05T12:58:09.726Z\",\"expires_at\":\"2018-03-07T12:58:09.734Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"closed\",\"tier\":\"classic\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[{\"id\":\"cap_WnhU4UwAAGAABMw2\",\"created_at\":\"2018-02-05T12:58:09.759Z\",\"amount\":12500,\"tax\":300,\"shipping\":200,\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"metadata\":{}}],\"refunds\":[],\"metadata\":{}}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:31 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:09 GMT",
         "Paidy-Version": "2016-07-01",
-        "Request-Id": "req_NWZmZjk1MDRhNzcxNDYxODk3NDNlYmM3YTU4N2QzYWQ=",
+        "Request-Id": "req_MDAzZDE3OWRmYjY1NDNmNDlkOGVlMjVmYjQ3OTkwYTQ=",
         "Server": "nginx/1.10.3 (Ubuntu)",
-        "Content-Length": "992",
+        "Content-Length": "1009",
         "Connection": "keep-alive"
       },
       "status_code": 200,
@@ -67,7 +67,7 @@
   },
   {
     "request": {
-      "body": "{\"capture_id\":\"cap_WXURAT4AAD4A1Gj9\"}",
+      "body": "{\"capture_id\":\"cap_WnhU4UwAAGAABMw2\"}",
       "headers": {
         "Authorization": "***",
         "Content-Type": "application/json",
@@ -81,17 +81,17 @@
         "connect_timeout": 30000
       },
       "request_body": "",
-      "url": "https://api.paidy.com/payments/pay_WXURAT4AADgA1Gj8/refunds"
+      "url": "https://api.paidy.com/payments/pay_WnhU4UwAAC8ABMw1/refunds"
     },
     "response": {
-      "body": "{\"id\":\"pay_WXURAT4AADgA1Gj8\",\"created_at\":\"2017-07-23T21:11:29.768Z\",\"expires_at\":\"2017-08-22T21:11:29.773Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"closed\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[{\"id\":\"cap_WXURAT4AAD4A1Gj9\",\"created_at\":\"2017-07-23T21:11:29.803Z\",\"amount\":12500,\"tax\":300,\"shipping\":200,\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"metadata\":{}}],\"refunds\":[{\"id\":\"ref_WXURAT4AAD4A1Gj-\",\"created_at\":\"2017-07-23T21:11:29.836Z\",\"capture_id\":\"cap_WXURAT4AAD4A1Gj9\",\"amount\":12500,\"reason\":\"unknown\",\"metadata\":{}}],\"metadata\":{}}",
+      "body": "{\"id\":\"pay_WnhU4UwAAC8ABMw1\",\"created_at\":\"2018-02-05T12:58:09.726Z\",\"expires_at\":\"2018-03-07T12:58:09.734Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"closed\",\"tier\":\"classic\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[{\"id\":\"cap_WnhU4UwAAGAABMw2\",\"created_at\":\"2018-02-05T12:58:09.759Z\",\"amount\":12500,\"tax\":300,\"shipping\":200,\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"metadata\":{}}],\"refunds\":[{\"id\":\"ref_WnhU4UwAAEsABMw3\",\"created_at\":\"2018-02-05T12:58:09.785Z\",\"capture_id\":\"cap_WnhU4UwAAGAABMw2\",\"amount\":12500,\"reason\":\"unknown\",\"metadata\":{}}],\"metadata\":{}}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:31 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:09 GMT",
         "Paidy-Version": "2016-07-01",
-        "Request-Id": "req_YzJiN2M4NTNmNjg1NDI3Y2EyYzk5ZGQ4MDE3OTIyYmU=",
+        "Request-Id": "req_NTUzMmE3MWIxMTA3NDlhMzg1NTE3NTBmZTNlMWE0ZTM=",
         "Server": "nginx/1.10.3 (Ubuntu)",
-        "Content-Length": "1145",
+        "Content-Length": "1162",
         "Connection": "keep-alive"
       },
       "status_code": 200,

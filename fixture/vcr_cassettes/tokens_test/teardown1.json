@@ -18,12 +18,12 @@
       "url": "https://api.paidy.com/tokens/TOKEN_PLACEHOLDER/resume"
     },
     "response": {
-      "body": "{\"reference\":\"err_ZTYwOWIzZTY5M2RiNDRjN2FhZTM0MTAzNzFiNDg5YzI=\",\"status\":\"404\",\"code\":\"404\",\"title\":\"Oh-ow\",\"description\":\"The requested resource could not be found.\"}",
+      "body": "{\"reference\":\"err_YzA2YTI0NzhjYTE1NDU3YWJiYzU2Njk2ODU1NTQxODY=\",\"status\":\"404\",\"code\":\"404\",\"title\":\"Oh-ow\",\"description\":\"The requested resource could not be found.\"}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:11 GMT",
         "Paidy-Version": "2016-07-01",
-        "Request-Id": "req_NzVjMTBiY2QzOTEyNDEwY2E5ZWQ2YzA0NzhmYTIxYjc=",
+        "Request-Id": "req_M2NhYWVhM2VkZTMxNDAyODk0NDhkMzVjNmQ0YWRiMGU=",
         "Server": "nginx/1.10.3 (Ubuntu)",
         "Content-Length": "167",
         "Connection": "keep-alive"

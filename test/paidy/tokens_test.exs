@@ -20,7 +20,7 @@ defmodule Paidy.TokenTest do
       end
     end)
 
-    {:ok, token_id: "tok_WXUFR8AAAAwATjVz"}
+    {:ok, token_id: "tok_WnhUsg0AACsBQNEp"}
   end
 
   test "Get by id works", context do
@@ -31,7 +31,7 @@ defmodule Paidy.TokenTest do
           assert res.id
 
         {:error, err} ->
-          flunk(err)
+          flunk(inspect(err))
       end
     end
   end
@@ -45,7 +45,7 @@ defmodule Paidy.TokenTest do
           assert res.id
 
         {:error, err} ->
-          flunk(err)
+          flunk(inspect(err))
       end
     end
   end
@@ -54,7 +54,7 @@ defmodule Paidy.TokenTest do
     use_cassette "tokens_test/all", match_requests_on: [:query, :request_body] do
       case Paidy.Token.all() do
         {:ok, res} when length(res) > 0 -> assert true
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -63,7 +63,7 @@ defmodule Paidy.TokenTest do
     use_cassette "tokens_test/all_with_key", match_requests_on: [:query, :request_body] do
       case Paidy.Token.all(Paidy.config_or_env_key()) do
         {:ok, res} when length(res) > 0 -> assert true
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -93,7 +93,7 @@ defmodule Paidy.TokenTest do
           assert resumed.id
 
         {:error, err} ->
-          flunk(err)
+          flunk(inspect(err))
       end
     end
   end
@@ -124,7 +124,7 @@ defmodule Paidy.TokenTest do
           assert resumed.id
 
         {:error, err} ->
-          flunk(err)
+          flunk(inspect(err))
       end
     end
   end
@@ -145,7 +145,7 @@ defmodule Paidy.TokenTest do
           assert res.id
 
         {:error, err} ->
-          flunk(err)
+          flunk(inspect(err))
       end
     end
   end

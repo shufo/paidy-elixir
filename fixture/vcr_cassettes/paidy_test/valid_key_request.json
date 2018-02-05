@@ -18,11 +18,11 @@
       "url": "https://api.paidy.com/tokens/"
     },
     "response": {
-      "body": "{\"reference\":\"err_N2UyNTJmNjMxZGZiNGRhOGJjMzkyYWE4NTIwYWY1NGI=\",\"status\":\"401\",\"code\":\"authentication.failed\",\"title\":\"Authentication invalid\",\"description\":\"The supplied authentication is invalid\"}",
+      "body": "{\"reference\":\"err_N2I0NjVkMWM2MGUwNGUzOGIwOTU0NDNkY2U2YTNmMzI=\",\"status\":\"401\",\"code\":\"authentication.failed\",\"title\":\"Authentication invalid\",\"description\":\"The supplied authentication is invalid\"}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
-        "Request-Id": "req_ZTRiMmM0YjEyMGM2NGI5NWEwNWJkOTI5YWUwYjM2ZmQ=",
+        "Date": "Mon, 05 Feb 2018 12:58:12 GMT",
+        "Request-Id": "req_MjExNTkyZmI5MDUwNDU3ZTgxY2RiM2FhZjhmMWJmMmU=",
         "Server": "nginx/1.10.3 (Ubuntu)",
         "WWW-Authenticate": "Bearer realm=\"Paidy\"",
         "Content-Length": "198",

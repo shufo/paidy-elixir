@@ -18,14 +18,14 @@
       "url": "https://api.paidy.com/payments"
     },
     "response": {
-      "body": "{\"id\":\"pay_WXURAD4AACEA1Gj3\",\"created_at\":\"2017-07-23T21:11:28.090Z\",\"expires_at\":\"2017-08-22T21:11:28.095Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"authorized\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[],\"refunds\":[],\"metadata\":{}}",
+      "body": "{\"id\":\"pay_WnhU4EwAAGMABMwv\",\"created_at\":\"2018-02-05T12:58:08.028Z\",\"expires_at\":\"2018-03-07T12:58:08.040Z\",\"amount\":12500,\"currency\":\"JPY\",\"description\":\"hoge\",\"store_name\":\"Live Shop! (Paidy sample store)\",\"test\":true,\"status\":\"authorized\",\"tier\":\"classic\",\"buyer\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\"},\"order\":{\"tax\":300,\"shipping\":200,\"order_ref\":\"your_order_ref\",\"items\":[{\"id\":\"PDI001\",\"title\":\"Paidyスニーカー\",\"description\":\"Paidyスニーカー\",\"unit_price\":12000,\"quantity\":1}],\"updated_at\":null},\"shipping_address\":{\"line1\":\"AXISビル 10F\",\"line2\":\"六本木4-22-1\",\"city\":\"東京都\",\"state\":\"港区\",\"zip\":\"106-2004\"},\"captures\":[],\"refunds\":[],\"metadata\":{}}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:29 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:08 GMT",
         "Paidy-Version": "2016-07-01",
-        "Request-Id": "req_NWMyN2E2ZDMyMGE0NDVlZTg3NjEwNmQ1MDVhMmIwYTk=",
+        "Request-Id": "req_OGIxNGJjNzY4M2VjNGYyMGI3NGE0MmY2YzIzMmIzZDc=",
         "Server": "nginx/1.10.3 (Ubuntu)",
-        "Content-Length": "747",
+        "Content-Length": "764",
         "Connection": "keep-alive"
       },
       "status_code": 200,

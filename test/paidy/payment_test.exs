@@ -51,7 +51,7 @@ defmodule Paidy.PaymentTest do
 
       on_exit(fn ->
         use_cassette "payment_test/teardown1", match_requests_on: [:query, :request_body] do
-          {:ok, _} = Paidy.Payment.close(payment["id"])
+          {:ok, _} = Paidy.Payment.close(payment.id)
         end
       end)
 
@@ -63,7 +63,7 @@ defmodule Paidy.PaymentTest do
     use_cassette "payment_test/get", match_requests_on: [:query, :request_body] do
       case Paidy.Payment.get(payment.id) do
         {:ok, res} -> assert res.id
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -72,7 +72,7 @@ defmodule Paidy.PaymentTest do
     use_cassette "payment_test/get_with_key", match_requests_on: [:query, :request_body] do
       case Paidy.Payment.get(payment.id, Paidy.config_or_env_key()) do
         {:ok, payment} -> assert payment.id
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -83,7 +83,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.capture(payment.id) do
         {:ok, captured} -> assert captured.captures |> Enum.count() == 1
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -94,7 +94,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.capture(payment.id, Paidy.config_or_env_key()) do
         {:ok, captured} -> assert captured.captures |> Enum.count() == 1
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -105,7 +105,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.change(context.payment.id, params) do
         {:ok, changed} -> assert changed.description == "Changed payment"
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -116,7 +116,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.change(payment.id, params, Paidy.config_or_env_key()) do
         {:ok, changed} -> assert changed.description == "Changed payment"
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -129,7 +129,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.refund(payment.id, capture_id) do
         {:ok, refunded} -> assert refunded.refunds |> List.first() |> Map.get("amount") == 12500
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -142,7 +142,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.refund(payment.id, capture_id, Paidy.config_or_env_key()) do
         {:ok, refunded} -> assert refunded.refunds |> List.first() |> Map.get("amount") == 12500
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -155,7 +155,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.refund_partial(payment.id, capture_id, 500) do
         {:ok, refunded} -> assert refunded.refunds |> List.first() |> Map.get("amount") == 500
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end
@@ -169,7 +169,7 @@ defmodule Paidy.PaymentTest do
 
       case Paidy.Payment.refund_partial(payment.id, capture_id, 500, Paidy.config_or_env_key()) do
         {:ok, refunded} -> assert refunded.refunds |> List.first() |> Map.get("amount") == 500
-        {:error, err} -> flunk(err)
+        {:error, err} -> flunk(inspect(err))
       end
     end
   end

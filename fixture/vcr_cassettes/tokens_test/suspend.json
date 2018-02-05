@@ -18,14 +18,14 @@
       "url": "https://api.paidy.com/tokens/TOKEN_PLACEHOLDER/suspend"
     },
     "response": {
-      "body": "{\"id\":\"TOKEN_PLACEHOLDER\",\"merchant_id\":\"MERCHANT_PLACEHOLDER\",\"wallet_id\":\"default\",\"status\":\"suspended\",\"origin\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\",\"address\":null},\"description\":\"Sample store\",\"kind\":\"recurring\",\"metadata\":{},\"webhook_url\":null,\"consumer_id\":\"con_0000000000000001\",\"suspensions\":[{\"timestamp\":\"2017-07-23T21:11:31.369Z\",\"authority\":\"merchant\"}],\"test\":true,\"version_nr\":5,\"created_at\":\"2017-07-23T20:21:27.678Z\",\"updated_at\":\"2017-07-23T21:11:31.369Z\",\"activated_at\":\"2017-07-23T20:21:30.435Z\",\"deleted_at\":null}",
+      "body": "{\"id\":\"TOKEN_PLACEHOLDER\",\"merchant_id\":\"MERCHANT_PLACEHOLDER\",\"wallet_id\":\"default\",\"status\":\"suspended\",\"origin\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\",\"address\":null},\"description\":\"\",\"kind\":\"recurring\",\"metadata\":{},\"webhook_url\":null,\"consumer_id\":\"con_0000000000000001\",\"suspensions\":[{\"timestamp\":\"2018-02-05T12:58:11.361Z\",\"authority\":\"merchant\"}],\"test\":true,\"version_nr\":5,\"created_at\":\"2018-02-05T12:57:22.335Z\",\"updated_at\":\"2018-02-05T12:58:11.361Z\",\"activated_at\":\"2018-02-05T12:57:29.364Z\",\"deleted_at\":null}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:32 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:11 GMT",
         "Paidy-Version": "2016-07-01",
-        "Request-Id": "req_OGE4MDY4OWJiMDZkNDdiMjkwN2Y4NWVhMjMyZGRmOTg=",
+        "Request-Id": "req_MTY3MzgyMTRhYTBiNGU5MjkxNTI0NTMwZWE0OTA1NzQ=",
         "Server": "nginx/1.10.3 (Ubuntu)",
-        "Content-Length": "620",
+        "Content-Length": "608",
         "Connection": "keep-alive"
       },
       "status_code": 200,
@@ -51,14 +51,14 @@
       "url": "https://api.paidy.com/tokens/TOKEN_PLACEHOLDER/resume"
     },
     "response": {
-      "body": "{\"id\":\"TOKEN_PLACEHOLDER\",\"merchant_id\":\"MERCHANT_PLACEHOLDER\",\"wallet_id\":\"default\",\"status\":\"active\",\"origin\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\",\"address\":null},\"description\":\"Sample store\",\"kind\":\"recurring\",\"metadata\":{},\"webhook_url\":null,\"consumer_id\":\"con_0000000000000001\",\"suspensions\":[],\"test\":true,\"version_nr\":6,\"created_at\":\"2017-07-23T20:21:27.678Z\",\"updated_at\":\"2017-07-23T21:11:31.467Z\",\"activated_at\":\"2017-07-23T20:21:30.435Z\",\"deleted_at\":null}",
+      "body": "{\"id\":\"TOKEN_PLACEHOLDER\",\"merchant_id\":\"MERCHANT_PLACEHOLDER\",\"wallet_id\":\"default\",\"status\":\"active\",\"origin\":{\"name1\":\"山田　太郎\",\"name2\":\"ヤマダ　タロウ\",\"email\":\"successful.payment@paidy.com\",\"phone\":\"818000000001\",\"address\":null},\"description\":\"\",\"kind\":\"recurring\",\"metadata\":{},\"webhook_url\":null,\"consumer_id\":\"con_0000000000000001\",\"suspensions\":[],\"test\":true,\"version_nr\":6,\"created_at\":\"2018-02-05T12:57:22.335Z\",\"updated_at\":\"2018-02-05T12:58:11.408Z\",\"activated_at\":\"2018-02-05T12:57:29.364Z\",\"deleted_at\":null}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:11 GMT",
         "Paidy-Version": "2016-07-01",
-        "Request-Id": "req_ZWVmYjMwZDgxYmY5NDk3OWE2ZmRhZjQyZTFkMDAwMDM=",
+        "Request-Id": "req_YWJlNjcyMGVhNDNkNDc4M2FkZmNkODExMzVjNzU1YTk=",
         "Server": "nginx/1.10.3 (Ubuntu)",
-        "Content-Length": "554",
+        "Content-Length": "542",
         "Connection": "keep-alive"
       },
       "status_code": 200,

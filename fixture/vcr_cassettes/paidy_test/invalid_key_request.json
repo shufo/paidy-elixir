@@ -21,7 +21,7 @@
       "body": "{\"reference\":\"\",\"status\":\"500\",\"code\":\"service.exception\",\"title\":\"Internal service exception\",\"description\":\"Something went wrong\"}",
       "headers": {
         "Content-Type": "application/json",
-        "Date": "Sun, 23 Jul 2017 21:11:33 GMT",
+        "Date": "Mon, 05 Feb 2018 12:58:11 GMT",
         "Server": "nginx/1.10.3 (Ubuntu)",
         "Content-Length": "132",
         "Connection": "keep-alive"

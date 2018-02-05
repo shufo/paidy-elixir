@@ -39,11 +39,17 @@ defmodule Paidy.Util do
   """
   def handle_paidy_response(res) when is_list(res), do: {:ok, res}
 
+  @error_codes Enum.concat([400..499, 500..599]) |> Enum.map(&(&1 |> to_string))
+  def handle_paidy_response(%{"status" => status} = res) when status in @error_codes,
+    do: {:error, Paidy.Util.string_map_to_atoms(res)}
+
   def handle_paidy_response(res) do
-    cond do
-      res["error"] -> {:error, res}
-      res["data"] -> {:ok, Enum.map(res["data"], &Paidy.Util.string_map_to_atoms(&1))}
-      true -> {:ok, Paidy.Util.string_map_to_atoms(res)}
+    case res do
+      %{"status" => status} = res when status in @error_codes ->
+        {:error, Paidy.Util.string_map_to_atoms(res)}
+
+      res ->
+        {:ok, Paidy.Util.string_map_to_atoms(res)}
     end
   end
 

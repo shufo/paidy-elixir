@@ -25,7 +25,7 @@ defmodule Paidy.PaidyTest do
 
       case res do
         {:ok, body} -> assert body.code == "service.exception"
-        {:error, err} -> assert String.contains?(err["error"]["message"], "YOUR_SECRET_KEY")
+        {:error, err} -> assert String.contains?(err.code, "service.exception")
         true -> assert false
       end
     end
@@ -39,7 +39,7 @@ defmodule Paidy.PaidyTest do
 
       case res do
         {:ok, body} -> assert body.code == "authentication.failed"
-        {:error, err} -> flunk(err["error"]["message"])
+        {:error, err} -> assert err.status == "401"
       end
     end
   end
