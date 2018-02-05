@@ -24,7 +24,7 @@ defmodule Paidy.Token do
   ```
   """
   def get(id) do
-    get id, Paidy.config_or_env_key
+    get(id, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -37,7 +37,7 @@ defmodule Paidy.Token do
   """
   def get(id, key) do
     Paidy.make_request_with_key(:get, "#{@endpoint}/#{id}", key)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -49,7 +49,7 @@ defmodule Paidy.Token do
   ```
   """
   def all() do
-    all Paidy.config_or_env_key
+    all Paidy.config_or_env_key()
   end
 
   @doc """
@@ -62,7 +62,7 @@ defmodule Paidy.Token do
   """
   def all(key) do
     Paidy.make_request_with_key(:get, "#{@endpoint}/", key, %{})
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -88,7 +88,7 @@ defmodule Paidy.Token do
   ```
   """
   def suspend(id, params) do
-    suspend id, params, Paidy.config_or_env_key
+    suspend(id, params, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -108,7 +108,7 @@ defmodule Paidy.Token do
   """
   def suspend(id, params, key) do
     Paidy.make_request_with_key(:post, "#{@endpoint}/#{id}/suspend", key, params)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -133,7 +133,7 @@ defmodule Paidy.Token do
   ```
   """
   def resume(id, params) do
-    resume id, params, Paidy.config_or_env_key
+    resume(id, params, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -153,7 +153,7 @@ defmodule Paidy.Token do
   """
   def resume(id, params, key) do
     Paidy.make_request_with_key(:post, "#{@endpoint}/#{id}/resume", key, params)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -180,7 +180,7 @@ defmodule Paidy.Token do
   ```
   """
   def delete(id, params) do
-    delete id, params, Paidy.config_or_env_key
+    delete(id, params, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -200,6 +200,6 @@ defmodule Paidy.Token do
   """
   def delete(id, params, key) do
     Paidy.make_request_with_key(:post, "#{@endpoint}/#{id}/delete", key, params)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 end

@@ -67,7 +67,7 @@ defmodule Paidy.Payment do
 
   """
   def create(params) do
-    create params, Paidy.config_or_env_key
+    create(params, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -123,7 +123,7 @@ defmodule Paidy.Payment do
   """
   def create(params, key) do
     Paidy.make_request_with_key(:post, "#{@endpoint}", key, params)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -149,7 +149,7 @@ defmodule Paidy.Payment do
 
   """
   def change(id, params) do
-    change id, params, Paidy.config_or_env_key
+    change(id, params, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -176,7 +176,7 @@ defmodule Paidy.Payment do
   """
   def change(id, params, key) do
     Paidy.make_request_with_key(:put, "#{@endpoint}/#{id}", key, params)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -194,7 +194,7 @@ defmodule Paidy.Payment do
 
   """
   def capture(id) do
-    capture id, Paidy.config_or_env_key
+    capture(id, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -213,7 +213,7 @@ defmodule Paidy.Payment do
   """
   def capture(id, key) do
     Paidy.make_request_with_key(:post, "#{@endpoint}/#{id}/captures", key)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -229,7 +229,7 @@ defmodule Paidy.Payment do
 
   """
   def get(id) do
-    get id, Paidy.config_or_env_key
+    get(id, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -246,7 +246,7 @@ defmodule Paidy.Payment do
   """
   def get(id, key) do
     Paidy.make_request_with_key(:get, "#{@endpoint}/#{id}", key)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -264,7 +264,7 @@ defmodule Paidy.Payment do
 
   """
   def refund(id, capture_id) do
-    refund id, capture_id, Paidy.config_or_env_key
+    refund(id, capture_id, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -283,8 +283,9 @@ defmodule Paidy.Payment do
   """
   def refund(id, capture_id, key) do
     params = %{capture_id: capture_id}
+
     Paidy.make_request_with_key(:post, "#{@endpoint}/#{id}/refunds", key, params)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -304,7 +305,7 @@ defmodule Paidy.Payment do
 
   """
   def refund_partial(id, capture_id, amount) do
-    refund_partial id, capture_id, amount, Paidy.config_or_env_key
+    refund_partial(id, capture_id, amount, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -325,8 +326,9 @@ defmodule Paidy.Payment do
   """
   def refund_partial(id, capture_id, amount, key) do
     params = %{capture_id: capture_id, amount: amount}
+
     Paidy.make_request_with_key(:post, "#{@endpoint}/#{id}/refunds", key, params)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 
   @doc """
@@ -344,7 +346,7 @@ defmodule Paidy.Payment do
 
   """
   def close(id) do
-    close id, Paidy.config_or_env_key
+    close(id, Paidy.config_or_env_key())
   end
 
   @doc """
@@ -363,6 +365,6 @@ defmodule Paidy.Payment do
   """
   def close(id, key) do
     Paidy.make_request_with_key(:post, "#{@endpoint}/#{id}/close", key)
-    |> Paidy.Util.handle_paidy_response
+    |> Paidy.Util.handle_paidy_response()
   end
 end
