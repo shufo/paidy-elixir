@@ -30,7 +30,7 @@ An Elixir library for working with [Paidy](https://paidy.com/).
 
 ```elixir
 def deps do
-  [{:paidy, "~> 0.1.0"}]
+  [{:paidy, "~> 0.2.0"}]
 end
 ```
 
