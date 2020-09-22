@@ -40,7 +40,7 @@ defmodule Paidy.Mixfile do
       {:retry, ">= 0.0.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
-      {:excoveralls, "~> 0.7.1", only: :test},
+      {:excoveralls, "~> 0.13.2", only: :test},
       {:exvcr, "~> 0.8.11", only: [:test, :dev]},
       {:mock, ">= 0.0.0", only: :test},
       {:inch_ex, ">= 0.0.0", only: [:dev, :test]},
