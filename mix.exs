@@ -41,7 +41,7 @@ defmodule Paidy.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
       {:excoveralls, "~> 0.7.1", only: :test},
-      {:exvcr, "~> 0.8.11", only: [:test, :dev]},
+      {:exvcr, "~> 0.12.0", only: [:test, :dev]},
       {:mock, ">= 0.0.0", only: :test},
       {:inch_ex, ">= 0.0.0", only: [:dev, :test]},
       {:cortex, "~> 0.1", only: [:dev, :test]}
