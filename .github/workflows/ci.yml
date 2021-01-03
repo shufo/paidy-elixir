@@ -10,4 +10,7 @@ jobs:
           otp-version: '23.0'
           elixir-version: '1.11.2'
       - run: mix deps.get
-      - run: mix test
+      - name: run test
+        run: mix test
+        env:
+          PAIDY_SECRET_KEY: foo
